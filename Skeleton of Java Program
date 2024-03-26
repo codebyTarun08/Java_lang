@@ -20,6 +20,10 @@ System.out.println("Hllo"); shows that the System is s Classes and out is object
 println is method use for printing multiple lines and prin("") Method is use for printing one line.
 
 
+//Commands to know the version of JDK and JRE
+javac -version  for compiler
+java -version   for environment
+
 //Commands for run java program in Command prompt
 
 Step 1: Make a directory in command prompt:-
