@@ -1,0 +1,41 @@
+import java.lang.*;
+class MyFirst
+{
+   public static void main(String args[])
+   {
+    System.out.println("Welcome to java learning Repository");
+   }
+}
+
+Here import .java.lang.*; line importing the java language library into our program. and If we do not write it , it will be automatically included in oor program on compile time.
+
+class First is uses for creating a Class. if we add public in beginning of line then it class name and file name is should be same otherwise it thrown an error.
+
+public static void main(String args[]) line demonstrate that the  public is globallly scoped in code block and static is help jvm to identify the main method.
+void means it does not returning anything ,
+main(Whatever) is describes that it is a method exactly same as a function in other languages lin c,c++.
+String shows it is Class because its first letter is Capital
+
+System.out.println("Hllo"); shows that the System is s Classes and out is object and
+println is method use for printing multiple lines and prin("") Method is use for printing one line.
+
+
+//Commands for run java program in Command prompt
+
+Step 1: Make a directory in command prompt:-
+        md MyJava
+Step 2: Enter in MyJava folder
+        cd MyJava
+Step 3: list the items
+        dir
+Results in list out all files in folder.
+but present time it will give nothing because initially it contain notthing,.
+Step 4: Write the Code or program in Note Pad.
+         Save the file in MyJava Folder and name as "ClassName.java"
+Step 5: Then again use "dir" command.
+results in show saved program file.
+Step 6: Compile the Program
+       Javac FileName.java
+Step 7: Run the program
+       Java FileName
+Results in the Output
