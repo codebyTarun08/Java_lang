@@ -6,6 +6,7 @@ developing mobile applications,Desktop and Web apploications, Games etc.
 Java is high level , Objext Orientred Programming language which is uses classes and object.
 
 What is JDK,JRE and JVM?
-JDK stands for Java developement kit,
-JRE stands for Java Runtime Environment,
-JVM stands for Java virtual machine.
+JDK stands for Java developement kit which is include all developement tools and JDK is a Superset of JRE and JVM,
+JRE stands for Java Runtime Environment and JRE builds and environment for compiling the java program.It is a superset of a JVM,
+JVM stands for Java virtual machine uses for running the Java Program.
+
