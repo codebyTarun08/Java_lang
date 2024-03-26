@@ -1,0 +1,79 @@
+How to Input in java ?
+
+User defined input can be inserted by class which is present in util or utility package.
+and here We can input the user defined input in Java by using some methods:-
+
+class Scanner
+   1- nextInt() = It takes integer number.
+   2- nextFloat() = It takes floating point number.
+   3- nextDouble() = It takes large Floating number.
+   4- next() = It take one word String. Example:- Tarun is ,Output:- Tarun
+   5- nextLine() = It takes multiple word string. Example:- Tarun is ,Output:- Tarun is
+   6- nextByte() = It take byte number.
+   7- nextShort() = It take small integer number.
+   8- nextLong() = It take large integer number
+   9- nextBoolean() = It take Bool value either true or False.
+If we have to chech whether coming value is right data type is not then we have to write these methods:-
+   10- hasNextInt() = If coming value is Integer then it gives True and if not then False.
+   11- hasNextFloat() = If coming value is Float then it gives True and if not then False.
+
+Let us take an example to see this documentation:-
+Example 1:- ADD TWO NUMBER
+
+import java.lang.*;
+import java.util.*;
+
+class inputKeyboard
+{
+  public static void main(String args[])
+  {
+    Scanner s=new Scanner(System.in);
+     |        |       |       |
+    Class   New    Method    iNPUT FROM kEYBOARD
+            reference
+     int a,b,c;
+     System.out.println("Enter two number:");
+     a=s.nextInt():
+     b=s.nextInt();
+     c=a+b;
+     System.out.println("Sum is " + c);
+   }
+}
+
+
+Example 2 :-  welcome message
+
+import java.lang.*;
+import java.util.*;
+
+class inputKeyboard
+{
+  public static void main(String args[])
+  {
+   Scanner s=new Sanner(System.in);
+   String name;
+   System.out.println("May i Know your Name ");
+   name =s.nextLine()
+   System.out.println("Welcome"+ name);
+  }
+}
+
+
+Note :- To list out all methods in scanner class in Command prompt
+use " javap java.util.Scanner " prompt
+it will list out all methods
+
+
+Example 3:- Convert binary number to decimal using radix method.
+
+import java.lang.*;
+import java.util.*;
+
+class inputKeyboard
+{
+  public static void main(String args[])
+  {
+   Scanner s=new Scanner(System.in);
+   s= useradix();
+
+
