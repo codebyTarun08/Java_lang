@@ -10,3 +10,4 @@ JDK stands for Java developement kit which is include all developement tools and
 JRE stands for Java Runtime Environment and JRE builds and environment for compiling the java program.It is a superset of a JVM,
 JVM stands for Java virtual machine uses for running the Java Program.
 
+Note :- JVM is responsible to converting Byte Code to the machine specific Code.
