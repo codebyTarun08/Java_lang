@@ -9,6 +9,8 @@ What is variables ?
       a=5;   //Initialization of variable
  So In conclusion, the variables are use to store some data types.
 
+The variable data should be in range otherwise it thrown an error.
+
 What is Data type?
 Data types specify the different sizes and values that can be stored in the variable.
 Data types are two types:-
@@ -101,6 +103,46 @@ class DataSizeRange
         }
 }
 
+
+
+          **** RULES FOR DECLARING VARIABLES****
+
+1) Case Sensitive  :-
+                    int amount;                                 int x;
+                    int Amount;                                float X;
+         Both are different variables.                   Both are different variables.  
+
+                    int x;
+                    float x;
+            It is not allowed to declare same variable of more than one data type.
+
+2) Contans Alphabets , Numbers, _ or $ :-
+
+                        int room1;                int room_number;
+                       int cabin151;              float Total$Amount;
+            All are valid.
+
+3) Starts with Alphabet , _ or $ :-
+                          byte x1; //It is allowed
+                          byte 1x; // It is not allowed
+
+4) Should not be a Keyword
+      float float; is not allowed.
+
+5)Should not be a Class name 
+
+6) No limit on length of name
+      int number$ofStudents$in$CSE;
+
+7)Follow Camel Cases:-
+       byte rollNumber;
+       int  averageMarkOfClass
+
+Camel Notation = Every first leteer of word is Capital except the first word.
+
+
+
+                         
 
 
 
