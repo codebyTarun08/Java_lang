@@ -59,6 +59,48 @@ Boolean Size is depends on Compiler.
 The default value is False.
 
 
+Formula to obtain range:-
+!)Short
+    -(2^16) to (2^16) -1
+2)int
+    -(2^32) to (2^32) -1
+3)long
+    -(2^64) to (2^64) -1
+
+
+***Write a program to obtain the range of data type**
+ 
+        ///In Java For every Data type there is an Class available///
+       ///To find out all class of data type in command prompt
+           write the prompt      javap java.lang.Integer
+                                 javap java.lang.Byte
+                                 javap java.lang.Float  and javap java.lang.Character and javap java.lang.Boolean///
+
+import java.lang.*;
+
+class DataSizeRange
+{
+        public static void main(String args[])
+        {
+         System.out.println("Int min:" + Integer.MIN_VALLUE);
+         System.out.println("Int max:" + Integer.MAX_VALLUE);
+         System.out.println("Int Bytes:" + Integer.Bytes);
+        }
+}
+
+
+import java.lang.*;
+
+class DataSizeRange
+{
+        public static void main(String args[])
+        {
+         System.out.println("Byte min:" + Byte.MIN_VALLUE);
+         System.out.println("Byte max:" + Byte.MAX_VALLUE);
+         System.out.println("Byte Bytes:" + Byte.Bytes);
+        }
+}
+
 
 
 
