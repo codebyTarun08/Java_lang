@@ -1,0 +1,13 @@
+What is variables ?
+  Variable are the Container which contains the data of any Data type.
+  Variables are first declare and then initialize in java/c/c++.
+  In python,it is not allowed to first declare and then initialize.
+  python automatically fetch the data and make suitable variable of data type.
+
+  Ex)  In Java/C/C++                                           In python
+      int a;  //Declaration of variable                   a=6;    # Declaration and Initialization both
+      a=5;   //Initialization of variable
+ So In conclusion, the variables are use to store some data types.
+
+What is Data type?
+Data types specify the different sizes and values that can be stored in the variable.
