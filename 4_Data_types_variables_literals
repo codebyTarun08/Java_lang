@@ -140,11 +140,91 @@ class DataSizeRange
 
 Camel Notation = Every first leter of word is Capital except the first word.
 
+What are Literals?
+
+Literals are the constant values that are given to a variables in a program.
+ex) z=5*x+7*y
+Here 5 and 7 are literals.
+
+As variable has its own data type assign to it.Similiar Literals have also their data type.
+--->If literals are without decimal point then it must be a Interger type literal.
+--->If literals are with decimal point like 123.25 then it is double type literal.
+--->So, other data type like float , long are when to use and how to use?
+
+                                  Type of Literals
+
+                             | byte     |   int    |
+                             | short    |   int    |
+                             | int      |   int    |
+                             | long     |  L or l  |
+                             |  float   |  F or f  |
+                             | double   |  D or d  |
+                             | char     |   ''     |
+                             | boolean  |true/false|
+                                                                           
+---> byte,short,int are taken as interger literals.
+    Ex) byte b=5;   variable b takes integer literal.
+    Ex) short j=67; variable j takes integer literal.
+    Ex) int g=63;   variable g takes integer literal.
+
+---> If value is to assign as long we have to write L or l at the last of value. 
+    Ex)  4569L  or 5465l
+
+---> If value is to assign as float we have to write F or f at the last of value.
+ex) 2.5f
+---> Default it takes double of literal implicitly but If value is to assign as double we have to write D or d at the last of value.
+
+****Note:- We cannot assign large literal data type link long to small data type likke byte, short, int.
+ex) int b= 45L;  it is wrong
+ex) float f=856.2f; it is also wrong***
+
+ex) int value=25;
+Here 25 is integer type literal.
+
+ex) double price=153.75
+Here 153.75 is the double type literal.
+
+ex) area=3.1425*radius*radius;
+Here 3.145 is the double type literal.
+
+ex)char c='A';
+Here A is the character type literal.
+
+ex)string str="Java";
+Here String is not primitive data type ,it is a Class and "str" is the reference and "Java" is a string pass to a reference.
+
+Integer type literal can be assign to a variable in other NUMBER SYSTEM like binary , decimal,octal and hexadecimal.
+Program :-
+
+import java.lang.*;
+
+class Literal
+{
+    public static void main(String args[])
+    {
+      byte b1=10;
+      byte b2=0b1010;
+      byte b3=012;
+      byte b4=0XA;
+
+      System.out.println(b1);
+      System.out.println(b2);
+      System.out.println(b3);
+      System.out.println(b4);
+    }
+}
+
+Output:- 
+    The output will be 10 for all value of b because 10 is written in different different number systems.
 
 
-                         
+Note:- 
+Ex) long l=999999999;
+In Java, long value can not be separated by Comma(,).
+Ex) long l=999,999,999;  //It is wrong.
+Insted of writing comma in between number we written (_).
+Ex) long l=999_999_999;  //It is right.
 
+Ex)long l=999_999_; //It is wrong we cannot write underscore in last of value.
 
-
-
-
+Ex)double d=1562147_._4547;  //It is wrong we cannot put before and after the underscore decimal point.
