@@ -138,7 +138,7 @@ class DataSizeRange
        byte rollNumber;
        int  averageMarkOfClass
 
-Camel Notation = Every first leteer of word is Capital except the first word.
+Camel Notation = Every first leter of word is Capital except the first word.
 
 
 
