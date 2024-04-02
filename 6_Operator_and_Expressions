@@ -1,1 +1,24 @@
+OPERATOR AND EXPRESSIONS
 
+Arithmetic operator and expressions:
+➢ +,	-,	*,	/,	%.	
+➢ These	operators	can	be	applied	on	any	type	of	data	except	Boolean.	
+➢ %	operator	works	on	>loat	and	double	data	types	without	taking	the	
+decimal	point	in	quotient	but	the	divisor	and	dividend	contain	the	
+decimal	point.	
+➢ To	write	down	the	expression	one	should	be	familiar	with	the	
+precedence	of	operators.	
+➢ *,	/,	%	have	higher	precedence	than	+,	-.	
+➢ To	change	the	precedence	of	operators	()	are	used.	
+➢ The	mechanism	of	converting	data	type	internally	by	the	compiler	is	
+known	as	“COERCION”.	
+➢ Data	types	of	expression:	
+              • The	addition,	subtraction,	multiplication	or	division	
+                between	the	byte,	short	and	int	results	as	int	as	they	belong	
+                integer	type	of	data.	
+              • Byte	and	short	are	provided	by	java	for	backward	
+                compatibility.	
+              • If	>loat	is	used	in	the	expression	then	the	result	is	>loat.	
+              • If	Double	is	used	in	the	expression	then	the	result	is	double.	
+              • When	char	is	used	the	result	is	int	type	as	char	is	part	of	
+                int(codes).	
