@@ -1,0 +1,26 @@
+Increment/Decrement Operator:- this operator is used to increment/decrement the value of Integer,floatand character type by 1.
+Note:-It is applicable on int,byte,char but not on boolean.
+Types:- i)Post Increment/Decrement
+        2)pre  Inccremnt/Decrement
+Syntax:i)Post Increment/Decrement x++; :- In post increment it use the value after that it increment the value by one.
+       2)pre  Inccremnt/Decrement --x; :- In pre increment it first increment the value after that it use the value.
+
+Example:- 1) int x=5;
+             x++;
+             ++x;
+          2) int x=5,y;
+             y=x++;
+          3)int x=5,y;
+            y=++x;
+          4)float x=5.3;
+            x++;
+          o/p=6.3
+          5)byte x=4;
+            x++;
+          6)char x='A';     //'A' is 65
+            x++;
+           System.out.print(x);
+          o/p= 66 means 'B'
+
+
+ 
