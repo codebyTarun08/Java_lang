@@ -10,8 +10,10 @@ Example:- 1) int x=5;
              ++x;
           2) int x=5,y;
              y=x++;
+      //First Assignment is done means y is 5 after x is increment means after x is 6.
           3)int x=5,y;
             y=++x;
+      //First increment operator is done means y is 6 and x is also 6.
           4)float x=5.3;
             x++;
           o/p=6.3
@@ -21,6 +23,9 @@ Example:- 1) int x=5;
             x++;
            System.out.print(x);
           o/p= 66 means 'B'
-
+          7)int x=5,y=4,z;
+            z=2*x++ + 3* ++y;
+            System.out.println(z);
+           o/p=10+15=>z=25
 
  
