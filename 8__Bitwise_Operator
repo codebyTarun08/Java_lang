@@ -1,0 +1,54 @@
+Bitwise Operator:-Those operator which perform on bit level only.
+                  It is applicable only on integer not on float or double.
+
+ | AND |  & |
+ | OR  |  | |
+ | XOR |  ^ |
+ |Right| >> |
+  Shift
+ | Left| << |
+  Shift
+ |Unsigned  | >>> |
+ Right Shift
+
+
+ Truth Table 
+ 
+ A B   A&B       A B  A|B        A B   A^B
+ 0 0    0        0 0   0         0 0    0
+ 0 1    0        0 1   1         0 1    1
+ 1 0    0        1 0   1         1 0    1
+ 1 1    1        1 1   1         1 1    0
+
+   0/p             o/p            o/p
+ 1 when both    0 when both       0 when both
+ are 1            are  0          are 0 or 1.
+
+
+
+ Example:-
+   int x=10,y=6,3;
+
+   x->  0001010
+   y->  0000110
+   ____________
+   x&y  0000010
+      =      2
+
+ Example:-
+   int x=10,y=6,3;
+
+   x->  0001010
+   y->  0000110
+   ____________
+   x|y  0001110
+      =      14
+
+ Example:-
+   int x=10,y=6,3;
+
+   x->  0001010
+   y->  0000110
+   ____________
+   x^y  0001100
+      =      12
