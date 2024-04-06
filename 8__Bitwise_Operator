@@ -52,3 +52,33 @@ Bitwise Operator:-Those operator which perform on bit level only.
    ____________
    x^y  0001100
       =      12
+
+Example:-
+ int x=10,y=6,3;
+
+   x->  00001010
+_________________
+z=x<<1  00010100
+     z=      20
+means 2 times of x.
+so if you want to multiply with powers of 2 you can use right shift.
+so if k places to move in number n then result is n*2^k.
+if 1 place is to move k=1.
+if 2 place is to move k=2.
+
+Example:-
+ int x=10,y=6,3;
+
+   x->  00001010
+_________________
+z=x>>1  00000101
+     z=      5
+means divide by 2 times.
+
+so if you want to divide with powers of 2 you can use left shift.
+so if k places to move in number n then result is n/2^k.
+
+
+
+
+
