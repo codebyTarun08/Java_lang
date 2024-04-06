@@ -28,4 +28,12 @@ Example:- 1) int x=5;
             System.out.println(z);
            o/p=10+15=>z=25
 
+Note:- byte b;
+       b=b+1;
+o/p= It is throw error because integer(1) is added with byte results in integer and it assigns it in byte so it throw error.
+     as we cannot assign big to small.
+
+So the Solution is b++;
+It will never throw error.
+
  
