@@ -3,7 +3,7 @@ OPERATOR AND EXPRESSIONS
 Arithmetic operator and expressions:
 ➢ +,	-,	*,	/,	%.	
 ➢ These	operators	can	be	applied	on	any	type	of	data	except	Boolean.	
-➢ %	operator	works	on	>loat	and	double	data	types	without	taking	the	
+➢ %	operator	works	on	float	and	double	data	types	without	taking	the	
 decimal	point	in	quotient	but	the	divisor	and	dividend	contain	the	
 decimal	point.	
 ➢ To	write	down	the	expression	one	should	be	familiar	with	the	
@@ -18,7 +18,128 @@ known	as	“COERCION”.
                 integer	type	of	data.	
               • Byte	and	short	are	provided	by	java	for	backward	
                 compatibility.	
-              • If	>loat	is	used	in	the	expression	then	the	result	is	>loat.	
+              • If float	is	used	in	the	expression	then	the	result	is	float.	
               • If	Double	is	used	in	the	expression	then	the	result	is	double.	
               • When	char	is	used	the	result	is	int	type	as	char	is	part	of	
                 int(codes).	
+
+Example:Arithmetic oprations:-
+import java.lang.*;
+
+class Expression
+{
+    public static void main(String args[])
+    {
+     int a,b;
+     float c,z;
+     a=10;
+     b=6;
+     c=a+b/2;
+     z=(a+b)/2f;
+     System.out.println(c);
+     System.out.println(z);
+     c=a/b;
+     z=a%b;
+     System.out.println(c);
+     System.out.println(z);
+
+     byte p=10;
+     short q=5;
+     
+     int r = p+q;
+     System.out.println(r);
+     
+     char t = 40;
+     int  u=30;
+     int v=t-u;
+     System.out.println(v);
+    }
+}
+
+Example:Area of triangle
+
+import java.lang.*;
+import java.util.Scanner;
+
+
+class Areatriangle
+{
+ public static void main(String args[])
+ {
+  Scanner sc=new Scanner(System.in);
+  int a,b,c;
+  double area;
+  double s;
+ 
+  System.out.println("Enter the sides of Triangle:");
+  a=sc.nextInt();
+  b=sc.nextInt();
+  c=sc.nextInt();
+
+  System.out.println("Method 1:");
+  area=(a*b)/2;
+  System.out.println(area);
+
+  System.out.println("Metrhod 2:");
+  s=(a+b+c)/2f;
+  area=Math.sqrt(s*(s-a)*(s-b)*(s-c));
+  System.out.println(area);
+ } 
+}
+
+Example: WAP to find the root of Quadratic Equation.
+
+import java.lang.*;
+import java.util.Scanner;
+
+
+class Quadratic_root
+{
+ public static void main(String args[])
+ {
+  Scanner sc=new Scanner(System.in);
+  int a,b,c;
+  double r1,r2;
+  
+  System.out.println("Enter the coefficient of Quadratic equation:");
+  a=sc.nextInt();
+  b=sc.nextInt();
+  c=sc.nextInt();
+
+
+  r1=(-b+Math.sqrt(b*b-4*c*a))/(2*a);
+  r2=(-b-Math.sqrt(b*b-4*c*a))/(2*a);
+
+  System.out.println("r1:"+r1);
+  System.out.println("r2:"+r2);
+ }
+}
+
+Example : WAP to find the Total Area and Volume of Cuboid.
+
+import java.lang.*;
+import java.util.Scanner;
+
+class Cuboid
+{
+  public static void main(String args[])
+  {
+   Scanner sc=new Scanner(System.in);
+   float a,b,c;
+   System.out.println("Enter the sides of Cuboid:");
+   System.out.println("Enter Length:");
+   a=sc.nextFloat();
+   System.out.println("Enter breadth:");
+   b=sc.nextFloat();
+   System.out.println("Enter height:");
+   c=sc.nextFloat();
+
+   float Area,Volume;
+   Area= 2*(a*b+b*c+c*a);
+  
+   Volume=a*b*c;
+   System.out.println("Volume is:"+Volume);
+   System.out.println("Total Area of Cuboid is:"+Area);
+  }
+}
+
