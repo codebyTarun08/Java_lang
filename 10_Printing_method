@@ -1,0 +1,60 @@
+In Java printing is done with the help of System.out.println();
+
+Java is providing a builtin class called System and this have a builin object call out.
+out object belongs to the print stream class.
+out object is attached with the monitor.out is a static object so we use it by using dot operator.
+
+There are four types of methods available in java:-
+  1)System.out.print();
+  2)System.out.println();
+  3)System.out.printf();
+  4)System.out,format();
+
+Overloaded Methods:- Those methods whhich have different  parameter with same class name are called overloaded methods.
+print stream method will take more than one parameter such as int float char as well as String. so it is overloaded method.
+
+
+Example:-
+package printing;
+
+import java.util.*;
+
+public class Printing {
+    public static void main(String[] args) {
+        
+        /*int a=10;
+        float b=12.55f;
+        char c='A';
+        String str="Hello";
+        
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(str);*/
+        
+        
+        int x=10,y=20;
+        System.out.println(x+y);
+        System.out.println("Number is " +y);
+        System.out.println(x+y+" sum");
+        System.out.println("sum "+(x+y));
+        System.out.println("sum of "+x+" and "+y+" is "+(x+y));
+    }
+    
+}
+
+
+///
+  int x=10 ,y=20;
+  System.out.println(x+y+" Sum");
+
+  o/p:- 30 Sum
+///
+
+///
+    int x=10 ,y=20;
+    System.out.println("Sum "+x+y);
+   o/p:- SUm 1020
+
+   It is taking + as concatenation.
+///   
