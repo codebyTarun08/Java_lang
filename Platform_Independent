@@ -15,13 +15,15 @@ interact via a software.
 First.java   ---->   First.class ----> JVM <----> Operating System---Hardware
             compile               java
              javac
-Java is a platform independent language as it has byte code (Not executable program but error free program) and thisbyte code will execute by JVM on any OS the output will be same.
 
 First.cpp  ------> First.cece -----> Opearing Ssytem----Hardware
            compile             run
 
 c/c++ is a platform dependent language becaude their exe file is depenent upon system calls of that operating system like windows and macOS.
 So, C/C++ windows exe program cannot run on any other OS like macOS.
+
+System Calls are that calls when program wants some work done on hardware but it will not directly interact with hardware it uses OS for workdone and that can be call by System Calls.
+
 How java is platform independent ?
 
 • All the bytes codes first interact with JVM , as it is the source
@@ -41,5 +43,7 @@ Java is platform independent.
                 JVM               JVM              JVM
                  |                 |                |
               Windows           Linux              macOS   
+
+Java is a platform independent language as it has byte code (Not executable program but error free program) and thisbyte code will execute by JVM on any OS the output will be same.
 
                    
