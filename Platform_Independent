@@ -5,17 +5,19 @@ Platform Independent
 this byte code is not executable but it is a error free program.
 • To execute this java program we call a JVM ( java virtual
 machine ) and ask them to execute this file.
-• This virtual machine will have an interpreter or JIT Compiler that
+• This virtual machine will have an interpreter or JIT(Just in time) Compiler that
 will convert this byte code into machine code and get it executed
 on the hardware.
 • JVM cannot directly interact with the hardware , it needs to
 interact via a software.
 
           
-First.java   ---->   First.class ----> JVM ----> Operating System
+First.java   ---->   First.class ----> JVM <----> Operating System---Hardware
             compile               java
              javac
 
+First.cpp  ------> First.cece -----> Opearing Ssytem----Hardware
+           compile             run
 How java is platform independent ?
 
 • All the bytes codes first interact with JVM , as it is the source
