@@ -1,0 +1,94 @@
+           Architecture of JVM
+
+• JVM is responsible for executing the java code.
+• The main memory is in 3 parts:-
+  Code Section/MEthod area: one where the main program resides.
+  Stack: the other for storing the program data like variables etc.
+          this values are stored in stack area.
+  Heap: the last space is free space which is used during the run time of program and is
+  called heap area.
+
+• The file with the program is loaded into the code section and
+  the process is called class loading as all java code is in class
+  format .
+
+• The job of bringing the code into memory is done by class
+  loader.
+• The interpreter inside Java code is used to convert the code
+  into the machine code and get executed.
+• Dynamic values are created inside heap when you say new.
+• Local variables are created inside stack and they belong to
+  main memory.
+• When print is called its own stack is created
+• JVM also has garbage collector it takes away the values in
+  heap which are not in use
+• PC registers: JVM keeps the addresses of next instructions that needs to
+  be executed and it will hand it over to the CPU.
+• In java we can invoke or call the methods of other languages
+  like c , c++ this is called native methods, they will be a
+  separate stack for this.
+
+
+
+• A diagram representing the detail working of JVM Architecture.
+
+
+JVM architecture is mainly divided into 3 parts:-
+ !)Class Loader Subsystems
+ 2)JVM memory
+ 3)Execution Engine
+
+
+ 1) Class Loader Subsystems:- The process of bringing java code into the method area is know as     class Loading and it can be done by class loader.
+    That part is divided into three parts : (i)Loading
+                                           (ii)Linking
+                                          (iii)Initialization
+   (i)Loading:- It has also 3 types :-
+
+           Bootstrap and Extension Class loader ,these loader will load the runtime classes 
+           that are required by JVM.
+           1)Bootstrap Class Loader :-ALl the library classes like java SE (Java Standard 
+           Edition) or all classes that are required will be loaded by Bootstrap class loader.
+           
+           2)Extension Class Loader :- Extensional classes are useful for providing runtime 
+           environment by JVM and these classes are loaded by Extension class loader.
+           
+           3)Application Class Loader :-Application Class Loader will load those Classses that 
+           belongs to our Application.
+
+  (ii)Linking:-  Linking parts is having 3 things:
+               (i)Verify:- It will check whether the byte code is perfect byte code or not if there is any 
+               problem or diiferent pattern then it will throw a verify error.So we can say that will check that 
+               running code is secure or not.
+               
+              (ii)Prepare:- It is allocate memory for static variables used in our classes.Static variable are 
+              stored in method area only.
+             (iii)Resolve:- Actual linking process is taken here. For examaple there is a fun1() method is 
+             called inside the main() method then at the place of method call the address of this method must be 
+             stored or reference must be stored.
+
+ (iii)Initialization:- THis will initialize static variables,all static members of the classes.
+
+ 2) JVM memory:- JVM memory has few parts:-
+              (i) Method Area
+             (ii) Heap Area
+            (iii) Stack :- Stack contains threads.
+            (iv) Pc registers :- thread 1 PC registers, thread 2 pc registers, thread 3 pc registers
+            (v) Native Method Stack:-In java we can also invoke or call the methods of other languages                 like C,C++.
+  3) Execution engine :- 
+                    (i) Interpreter:- Interpreter will convert bytecode into machine code line by line 
+                        and execute it.If the codeis to again and again is use so everrytime it 
+                        convert into machine code,so each time code is converted.
+                   (ii) JIT Compiler:- JIT (just in time) compiler is same as interpreter but JIT 
+                        compiler does not convert byte code into machine code again and again if the 
+                        code is repeatedly use.
+                  (iii) Garbage collector:- Garbage collector are use to take away the object from the 
+                        heap if the object is no longer in use.
+                        
+External part of JVM architecture:-
+ thre are three things:-
+ 1)Native Method stack
+ 2)Native Method interface:-This will help java programs or JVM to interact with Native Methods.
+ 3)Native Method Library:-this is  a library of Native Methods.
+                        
+             
