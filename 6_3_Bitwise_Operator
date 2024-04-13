@@ -54,6 +54,7 @@ Bitwise Operator:-Those operator which perform on bit level only.
    x^y  0001100
     z =      12
 
+1) Left Shift:-
 Example:-
  int x=10,y=6,z;
 
@@ -67,6 +68,7 @@ so if k places to move in number n then result is n*2^k.
 if 1 place is to move k=1.
 if 2 place is to move k=2.
 
+2)Right Shift:-
 Example:-
  int x=10,y=6,z;
 
@@ -78,6 +80,43 @@ means divide by 2 times.
 
 so if you want to divide with powers of 2 you can use left shift.
 so if k places to move in number n then result is n/2^k.
+
+3)Unsigned Right Shift:-
+Example:-
+  
+   int x=-10;
+
+ Here x is the negative of 10 then how it signed in computer:
+     10--> 00001010
+    1's--> 11110101
+    2's        +  1
+________________________
+-10 =      11110110
+then,
+  x -->     11110110
+after shifting to right the M.S.B (signed bit) should be untouched or also can be said that repeat it.
+x>>1-->     11111011
+so as a result what can be calculated?
+Answer is make signed bit as 0 and calculate it.
+x>>1-->     01111011
+______________________
+      =        123
+so after shifting right shift of -10 the result we got as a +ve number = 123
+
+4)NOT bitwise operation:-
+
+int x=10,y=6;
+x    -->  00001010
+z=~X -->  11110101
+
+2'S COMPLEMENT OF 10 ---> 000001011=11
+so if x = 10 then ~x =-11
+
+so if y=6  then ~y=-7
+
+means, x = k 
+then   ~x=-k+1
+
 
 
 
