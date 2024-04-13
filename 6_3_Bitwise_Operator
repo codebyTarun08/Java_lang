@@ -3,6 +3,7 @@ Bitwise Operator:-Those operator which perform on bit level only.
 
  | AND |  & |
  | OR  |  | |
+ | NOT |  ~ |
  | XOR |  ^ |
  |Right| >> |
   Shift
@@ -27,22 +28,22 @@ Bitwise Operator:-Those operator which perform on bit level only.
 
 
  Example:-
-   int x=10,y=6,3;
+   int x=10,y=6,z;
 
    x->  0001010
    y->  0000110
    ____________
    x&y  0000010
-      =      2
+     z =      2
 
  Example:-
-   int x=10,y=6,3;
+   int x=10,y=6,z;
 
    x->  0001010
    y->  0000110
    ____________
    x|y  0001110
-      =      14
+    z  =     14
 
  Example:-
    int x=10,y=6,3;
@@ -51,10 +52,10 @@ Bitwise Operator:-Those operator which perform on bit level only.
    y->  0000110
    ____________
    x^y  0001100
-      =      12
+    z =      12
 
 Example:-
- int x=10,y=6,3;
+ int x=10,y=6,z;
 
    x->  00001010
 _________________
@@ -67,7 +68,7 @@ if 1 place is to move k=1.
 if 2 place is to move k=2.
 
 Example:-
- int x=10,y=6,3;
+ int x=10,y=6,z;
 
    x->  00001010
 _________________
@@ -77,8 +78,6 @@ means divide by 2 times.
 
 so if you want to divide with powers of 2 you can use left shift.
 so if k places to move in number n then result is n/2^k.
-
-
 
 
 
