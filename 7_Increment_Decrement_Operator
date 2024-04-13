@@ -1,4 +1,4 @@
-Increment/Decrement Operator:- this operator is used to increment/decrement the value of Integer,floatand character type by 1.
+Increment/Decrement Operator:- this operator is used to increment/decrement the value of Integer,floatand character type by 1 unit.
 Note:-It is applicable on int,byte,char but not on boolean.
 Types:- i)Post Increment/Decrement
         2)pre  Inccremnt/Decrement
@@ -33,7 +33,7 @@ Note:- byte b;
 o/p= It is throw error because integer(1) is added with byte results in integer and it assigns it in byte so it throw error.
      as we cannot assign big to small.
 
-So the Solution is b++;
+So the Solution is b=b++;
 It will never throw error.
 
  
