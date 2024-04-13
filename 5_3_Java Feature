@@ -1,0 +1,43 @@
+Buzz Words:- it is the features of java.
+
+1)Simple
+2)Secure
+3)Portable:-platform Dependent
+4)Object-Oriented:-oops is a style of programming.Thr principles of oops are i)Inheritence ii)Polymorpjism iii)Encapsulation iv)Abstraction
+          
+5)Robust:-during the run time If a program requires any resources and the resources are not available, usually programs crash.The programs of C, C++ may crash if they are not written properly.
+But Java guarantees start even if there is unavailability of resources,
+the program remains executing,It will not crash unless and until a user stops the program.So this feature is achieved by using exception handling and this is achieved using exception handling.
+It will not crash unless and until a user stops the program.
+
+6)Multithreadrd:-means,We can break a single program into multiple pieces so that they can run simultaneously.
+7)Architecture-Neutral:-means not dependent on hardware architecture if there is JVM install then the java program will be execute.
+mainly architecture are:-1)Von neumann Architecture
+                         2)ARM
+                         3)RISC
+                         4)CISC
+                         5)Embedded
+8)Interpreted:-means interpreter will convert into machine code line byb line and execute it.
+               Interpreter is slow than compiler.
+               but JIT is faster than Interpreter.             
+9)High Performance
+10)Distributed:- many computer system ac work together on single program.mainly two applications are use for this i) EJB and ii) Spring.
+11)Dynamic:- Every object that is created in java is dynamic because this is creted in heap.
+or we can move running form of the program from one computer to another computer
+Some of the features of JAVA are
+• Its simple
+• It is secure , as it cannot get infected by virus or any malware
+because of JVM as it has a securer / verifier
+• It is Platform independent hence Portable
+• The style of java programming object oriented I.e , Abstraction ,
+Inheritance , Encapsulation and Polymorphism
+• Even if there is unavailability of program JVM makes sure to run it
+without any crashes in it therefore it is very robust this is achieved by
+exception handling
+• Java supports Multithreading
+• Java is hardware Architectural neutral so, it can run on any hardware
+• It is interpreter language but gives high performance
+• It supports Distributed computing which is mostly used by
+businesses globally where multiple business are connected to a
+single network
+• Java is Dynamic because it is created in heap
