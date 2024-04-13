@@ -117,6 +117,92 @@ so if y=6  then ~y=-7
 means, x = k 
 then   ~x=-k+1
 
+Program :- WA java program to perform all bitwise operators.
+
+package bitwisedemo;
+
+public class Bitwisedemo
+{
+ public static void main(String[] args)
+ {
+    int x=10,y=6,z;
+    //also we can write it on binary form
+    int x=0b1010;
+    int y=0b0110;
+    z=x&y;
+    System.out.println("Result of AND Operation:"+z);
+    z=x|y;
+    System.out.println("Result of OR Operation:"+z);
+    z=x^y;
+    System.out.println("Result of XOR Operation:"+z);
+  }
+}
+o/p= Result of AND Operation: 2
+     Result of OR Operation: 14
+     Result of XOR Operation: 12
+
+For shift operations:
+
+package bitwisedemo;
+
+public class Bitwisedemo
+{
+ public static void main(String[] args)
+ {
+  int x=0b1000; // x=8;
+  int y;
+  y=x<<1;
+  System.out.println(y);
+ }
+}
+
+o/p = //in left shift the output will be n.2^k,so
+      18
+
+package bitwisedemo;
+
+public class Bitwisedemo
+{
+ public static void main(String[] args)
+ {
+  int x=0b1000; // x=8;
+  int y;
+  y=x>>1;
+  System.out.println(y);
+  y=x>>2;
+ }
+}
+
+o/p = //In right shift the output is n/2^k ,so
+        4
+        2
+
+public class Bitwisedemo
+{
+ public static void main(String[] args)
+ {
+  int x=0b1000; // x=8;
+  int y;
+  y=x>>1;
+  System.out.println(String.format("%s",Integer.toBinaryString(x)));
+  System.out.println(String.format("%s",Integer.toBinaryString(y)));
+ }
+}
+
+
+public class Bitwisedemo
+{
+ public static void main(String[] args)
+ {
+  int x=0b1000; // x=8;
+  int y;
+  y=x>>1;
+  System.out.println(String.format("%s",Integer.toBinaryString(x)));
+  System.out.println(String.format("%32s",Integer.toBinaryString(y))); //32 is use to remove signed bit  
+  System.out.println(y);
+ }
+}
+
 
 
 
