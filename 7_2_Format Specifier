@@ -1,0 +1,111 @@
+Format Specifier:
+Format specifier is also known as Controlled character.
+
+
+           %[Argument_index$][flags][width][.precision]conversion
+
+           argument index - 1$, 2$, 3$......
+
+           flag '-' , '+' , '0' , '' , '('
+
+           conversion -
+           char c      //character
+           int d,o,x  // decimal,octal,hexadecimal
+           float f,e,g //floating point,exponential(scientific representation)
+           String s  //string
+
+For character 5c is use.
+For integer %d is use to print in decimal number system and %o for octal and %x is for heaxadecimal number system.
+For float and double type data %f,%e for scientific representation and %g is use.
+For string %s is use.
+
+                       %d d is use for conversion.
+So we can write some in b/w % and conversion part.
+1) Argument index:
+      1$ : is callled First Argument
+      2$ : is called Second argument
+      3$ : is called third argument
+      .....
+
+ Argument is use for printing variable in any order or can be said that,
+ The benefit of argument is 
+ format specifier as independent of the order of arguments in which you were order,
+ you mention you can print them in order as you like.
+
+Example)
+
+public class Argument {
+    public static void main(String[] args) {
+        int x=10;
+        float y=10.2f;
+        char z='A';
+        String str="Java";
+
+        System.out.printf("%1$d %1$d %1$d \n",x);
+        System.out.printf("%1$d %2$e %1$d \n", x,y);
+        System.out.printf("%3$s %2$f %1$d \n",x,y,z);
+    }
+}
+
+o/p:
+
+10 10 10 
+10 1.020000e+01 10 
+A 10.200000 10 
+
+
+2)Width: Width are use print the data at the given no. of places or can be said printing data can be printed on given no. of places.
+ %5d  here 5 is know as width which is printing integer value to 5 places.
+ %5.2f here 5 places for whole printing value including decimal point and 2 places for after decimal point.
+ 
+3)Flag :
+ Flags are use to fill width .
+ Flags are '+','-','0','','('
+
+ float numbers are not stored exactly what you are giving. it will store may the nearest value.
+ Double is more precise than float.
+
+Example:
+
+public class Flag{
+    public static void main(String[] args) {
+        int x=10;
+        int y=-5;
+        float f=125.97f;
+        String str="Java";
+        System.out.printf("%5d\n",x); // 10 is printed in 5 places
+        System.out.printf("%05d\n",x); //10 is printed in 5 places and void places are filled with 0's.
+        System.out.printf("%+5d\n",x); //if integer no. is +ve then it print +no. and if -ve then print -no.
+        System.out.printf("%+5d\n",y); //it print -no. because y is -ve.
+        System.out.printf("%(5d\n",y); //the number is enclosed with brackets.
+        System.out.printf("%f\n",f); //float number are not exactly print it will print pricise value. 
+        System.out.printf("%5f\n",f); //Float number will print normally
+        System.out.printf("%5.2f\n",f); //Float number will print in 5 places if it equal or less than 5 else it will print the whole number.and 2 places after the decimal poiint.
+        System.out.printf("%10.2f\n",f); //Float number will print in 10 places and 2 places after the decimal point and remaining places are void.
+        System.out.printf("%010.2f\n",f);//remaining places are filled with 0's.
+        System.out.printf("%s\n",str); //it will print normally string
+        System.out.printf("%20s\n",str); //it will print the string in 20 places and it will be right align.
+        System.out.printf("%-20s\n",str);// it will be left align because -ve is use.
+
+    }
+}
+O/p:
+    10
+00010
+  +10
+   -5
+  (5)
+125.970001
+125.970001
+125.97
+    125.97
+0000125.97
+Java
+                Java
+Java
+
+4)precision is notthing but %6.2f.
+ 
+ 
+
+
