@@ -1,10 +1,15 @@
+Strings are immutable means that cannot be modified at run time.
+So how changes are made?
+It can be made by making a new string and changes are made according to operations 
+and refernce will be pointing to the new object.
+
 
 Methods of string class:
 
 ➢ The methods creates a new string before giving the results.
 ➢ The new object is then created in heap memory.
 #1.
-➢ str.length(): it returns the length of the string mentioned.
+➢ str.length(): it returns the length of the string mentioned return type is integer.
 ➢ str.toLowerCase(): it converts the given characters of string
 into lower case.
 ➢ str.toUpperCase(): it converts the given characters of string
@@ -18,24 +23,88 @@ but the starting and ending index both can be given in the
 substring.
 ➢ str.replace(char old, char new): it replaces the old character
 with the new character.
+
 #2.
 ➢ str.startsWith(string s): to find the particular starting word
-of a the string/to find the initials.
+of a the string/to find the initials and return type is boolean either true or false.
 ➢ Str.endsWith(string s): to find particular ending word of the
-string.
+string and return type is boolean either true or false.
 ➢ str.charAt(int index): to find the particular character present
-on the index given.
+on the index given and return type is character.
 ➢ str.indexOf(String s): to find the index of the given character.
 ➢ str.lastIndexOf(string s): to find the index of the given
-character from the end of the array.
+character from the end of the array and return type is integer.
+
 #3.
 ➢ str.equals(string s): to check whether the contents of two
-strings are equal or not.
+strings are equal or not and return type is boolean either true or false.
 ➢ str.equalsIgnoreCase(string s): to check whether the contents
 of two strings are equal or not but it does not depend upon the
-case of characters.
+case of characters and return type is boolean either true or false.
 ➢ str.compareTo(string s): to compare two strings according to
 the dictionary order(in accordance with the ASCII codes for
-cases of characters).
+cases of characters) and returns the integer value.
 ➢ str.valueOf(int i): to convert different types of data into
-string data type. 
+string data type and gives the string. 
+
+Example) WAP to practice all methods.
+
+Program:
+public class stringPractice{
+    public static void main(String args[])
+    {
+        String str=new String("Java program");
+        int len=str.length();
+        System.out.println(len);//the len method will give length of string and it will also cound blank space.
+
+        String str2=str.toUpperCase();//this method will create new string and str2 will be pointing to that new object
+                                      // and the passing string is created in pool but resulting string is in heap memory. 
+        System.out.println(str2);
+
+        String str3=new String("    java     ");
+        String str4=str3.trim();//trim method will remove leading and trailing blank spaces and resulting string in heap.
+        System.out.println(str4);
+
+        String str5=str.substring(2, 7);//this method gives string start from 2 to 6th index.
+        System.out.println(str5);
+
+        String str6=str.replace('a','A');//this method will replace the old char to new char and return type is string.
+        System.out.println(str6);
+
+        System.out.println(str.startsWith("Ja"));//it checks and return the voolean value.
+        System.out.println(str.endsWith("course"));//it checks and return the voolean value.
+
+        System.out.println(str.charAt(5));//this method will return the char presenting at index.
+        System.out.println(str.charAt(4));//this method will return the char presenting at index.
+
+        System.out.println(str.indexOf("p"));//this method will return index of character presenting in string.
+        System.out.println(str.indexOf("a", 2));
+
+        System.out.println(str.lastIndexOf("p"));//this method will return the index from last character.
+
+        boolean b=str.equals(str6);//this method check both strings or objects are equal or not.
+        System.out.println(b);
+        System.out.println(str.equalsIgnoreCase(str6));
+        System.out.println(str.compareTo(str3));
+
+    }
+}
+
+O/p:
+
+PS D:\Programs\Java> cd "d:\Programs\Java\" ; if ($?) { javac stringPractice.java } ; if ($?) { java stringPractice }
+12
+JAVA PROGRAM
+java
+va pr
+JAvA progrAm
+true
+false
+p
+ 
+5
+3
+5
+false
+true
+42
