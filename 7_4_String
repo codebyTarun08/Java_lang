@@ -1,0 +1,114 @@
+String is an built in class in Java.it is use as data type.
+
+String is a collection of characters that are forming words or sentences.
+
+Syntax:    String str="Java Program";
+
+       String is a class.
+       str is a referemce to the literal.
+       "Java Program" is a String object or literal.
+
+       String is stored in the memory as an array and string character can be access by the index.
+
+
+       str1----->J a v a   p r o g r a m 
+       |__|      0 1 2 3 4 5 6 7 8 9 10 11
+
+
+Constructors are methods or functions that are used for creating objects.
+here for creating strings these constructors are use 1) .String(char[])
+                                                     2) .String(byte[])
+                                                     3) .String(string)
+
+1) char c[]={'A','B','C','D'};
+String str1=new String(c);
+
+     str1---->ABCD
+              0123
+
+2) byte b[]={65,66,67,68};
+  String str2=new String(b);
+
+  str1---->ABCD
+           0123
+
+3) String str1=new String("Java");
+
+ Here a constant literal is passing and it is also create in heap memory by using new keyword.
+ So, here two objects are created 
+ 1) constant literal is created in pool.
+ 2)By using new keyword,object is created in heap memory and str1 will be the reference to that object.
+
+  In heap                                       In pool
+ str1----->|Java|                                   Java
+
+ => Both object will occupy space in memory one in heap and other one in poolo.
+
+  (ii) String str2="java Program";
+
+   str2----->|Java Program|
+   this literal will occupy space in pool.
+
+
+More on Strings:-
+
+  String str1="java"; //means str1 is pointing to the java object and this object is created in pool.
+  String str2="java"; //Now it is check whether the object is created in pool or not it it exists then it will not created and reference will be made to it.
+
+      str1-------->java
+                  ^
+                  |
+                 str2
+
+   String str3=new String("java");//Now a new string object is created in heap memory and literal object will be checked in pool it exists or not.
+
+
+   => whenever 3rd constructor method is use to create it is not neccesary two objects are created it may be equal to two or less than two.
+   
+   Example) WAP to create a String and check two reference are pointing to one object or not.
+   Program:-
+   public class StringCreation {
+       public static void main(String[] args) {
+         String str1="Java Program";
+         System.out.println(str1);
+         String str2=new String("java");
+         System.out.println(str2);
+
+         char c[]={'H','E','L','L','O'};
+         String str3=new String(c);
+         System.out.println(str3);
+
+         byte b[]={64,65,66,67,68};
+         String str4=new String(b);
+         System.out.println(str4);
+
+         /**Slicing of strings
+         To check strings methods write the command in cmd  javap java.lang.String  */
+
+         String str5=new String(c,1,3);
+         System.out.println(str5);
+         String str6=new String(b,2,2);
+         System.out.println(str6);
+
+         /* To check the two or more references are pointing to one object or not */
+         String str7="Same object";
+         String str8="Same object";
+         System.out.println(str7==str8);//Gives boolean value
+         //str is the reference so it hold the address of object and comparison of addresses are done.
+         String str9="same object";
+         System.out.println(str7==str9);//Java is case sensitive
+       }
+}
+
+O/p:
+PS D:\Programs\Java> cd "d:\Programs\Java\" ; if ($?) { javac StringCreation.java } ; if ($?) { java StringCreation }
+Java Program
+java
+HELLO
+@ABCD
+ELL
+BC
+true
+false
+
+                 
