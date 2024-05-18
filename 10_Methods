@@ -37,5 +37,69 @@ class Test
       }
 }
 Note:-   The method should be static otherwise it will not called.
+      or To	call	a	method	from	main	method	it	is	needed	to	be	made	static.
 O/P :-
     method max is called and the returned value is assigned to c variable.
+
+If we want to not make the method as static then what the procedure is:
+So we have to make object of class and call this as object.
+
+class Test
+{
+      int max(int x,int y)
+      {
+        if(x>y)
+           return x;
+        else
+           return y;
+      }
+      public static void main(String[] args){
+      int a=10,b=5;
+      Test ts=new Test();
+      System.out.println(ts.max(a,b));
+      }
+}
+o/p:- 10
+
+
+Parameters passing in Java:
+
+(1) The main method's variable are Actual Parameter and the called Method's variables are Formal parameter.
+(2) Formal parameters are the copy of Actual Parameters and the modification in Formal parameters will not affect the Actual parameters at returning time.
+
+In java parameters are passed in 2 ways:
+(1) Call by Value
+(2) Call by refernce
+Reference :- References are the nicknames of the varibles.
+ex) c=&a and d=&b are the nicknames of a and b.because c and d are address variable that holds the address of a and b .The modification can be done by accessing the variable through it's addresses.
+
+
+➢ Passing	of	objects	also	follow	the	same	method.	
+➢ Parameter	passing	for	primitive	datatypes	the	values	are	copied	in	
+formal	parameters,	whereas	in	parameter	passing	of	objects	the	
+reference	of	the	object	id	is	copied	in	formal	parameters.	
+➢ In	short	the	primitive	datatypes	are	passed	by	value	and	the	objects	
+are	passed	by	reference.	
+➢ Strings cannot be passed as parameter because Strings are immutable.
+➢ If Objects are passed as parameters so objects itself are not passed its reference is passed.
+   As we know the objects are created in heap and reference to the object is created inside stack.
+
+Below program demostrate the passsing of objects as parameter:
+
+class Test
+{
+  static void update(int A[])
+  {
+      A[0]=25;
+  }
+  public static void main(String[] args)
+  {
+   int A[]={2,5,7,3,6};
+   update(A);
+  System.out.println(A[0]);
+  }
+}
+o/p:- 
+Array reference A is created as Formal parameter and that reference is pointing to the actual object Array and the changes are made.
+After that A[0} is printed i.e. 25.
+So If objects are passed as parameter instead of passing object itself it's reference is passed.
