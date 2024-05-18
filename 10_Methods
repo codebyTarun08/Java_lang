@@ -103,3 +103,24 @@ o/p:-
 Array reference A is created as Formal parameter and that reference is pointing to the actual object Array and the changes are made.
 After that A[0} is printed i.e. 25.
 So If objects are passed as parameter instead of passing object itself it's reference is passed.
+
+
+Now What be a returnType of Methods :-
+
+So, the returnType of methods can be any Primitive dataType in Java like int,float,double,long,char.
+And also the returnType of methods can be Object like String.
+returnType of methods can be void also.
+Example)
+
+            int max(int x,int y){
+             return x>y?x:y;
+            }
+
+             String userName(String email){
+              int a=email.indexOf("@");
+              String name=email.subString(0,a);
+              return name;
+             }
+
+
+
