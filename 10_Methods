@@ -1,0 +1,41 @@
+What are Methods?
+Methods are the members of Classes which provide functionality to the Classes.
+
+At Beginning,all programs are written in a monolithic style and it creates a problem when a error occurs.So,
+  the solution is modular programming in which a program is devided into main function and other 
+  modules for example: module 1 ,module 2, module 3, module 4...
+
+  but in oops based programming there are changes in 
+  program is called Class
+  main is called data
+  modules is called Methods.
+So the conclusion is Methods are like the function in C/C++.
+
+Syntax:- 
+          Signature
+             |
+          returnType methodName(parameter List)
+          {
+            ----        // body of method
+            ----      
+          }
+Example:
+
+class Test
+{
+      static int max(int x,int y)
+      {
+        if(x>y)
+           return x;
+        else
+           return y;
+      }
+      public static void main(String[] args){
+      int a=10,b=5,c;
+      c= max(a,b);             //10
+      System.out.println(c);
+      }
+}
+Note:-   The method should be static otherwise it will not called.
+O/P :-
+    method max is called and the returned value is assigned to c variable.
