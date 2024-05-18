@@ -67,6 +67,10 @@ Parameters passing in Java:
 (1) The main method's variable are Actual Parameter and the called Method's variables are Formal parameter.
 (2) Formal parameters are the copy of Actual Parameters and the modification in Formal parameters will not affect the Actual parameters at returning time.
 
+  There is in java it has only one way to pass parameter thar is,
+   The content of actual parameter whether it is a primitive data or reference or object is should be copy to the formal Parameter.
+   Unlike c/c++ it is not that the type is call by value or call by reference.
+
 In java parameters are passed in 2 ways:
 (1) Call by Value
 (2) Call by refernce
