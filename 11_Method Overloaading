@@ -1,0 +1,46 @@
+In Java, Method Overloading allows different methods to have the same name, but different signatures where the signature can differ by the number of input parameters or type of input parameters, or a mixture of both.
+
+Example:
+
+        int max(int x,int y){
+           return  x>y?x:y;
+        }
+
+        float max(float x,float y){
+           return x>y?x:y;
+        }
+        
+        int max(Int x,int y,int z){
+           return x>y && x>z? x:(y>z)?y:z;
+        }
+
+        so which method max is passes with different type of parameter or in different type of no. of parameter hence we can say max method is overloaded.
+
+   Now when we pass integer or float type parameter then its corresponds data type method will execute and when 3 parameters are passes then third method will 
+  execute.
+
+  Java Varangs/ Variable Arguments
+  Variable Arguments (Varargs) in Java is a method that takes a variable number of arguments. Variable Arguments in Java simplifies the creation of methods that need 
+  to take a variable number of arguments.
+
+  example:
+show();
+show(10);
+show(10,20);
+show(10,20,30);
+show(10,20,30,40);
+show(10,20,30,40,50);
+show(10,20,30,40,50,60);
+show(new int[]{10,20,30,40,50,60});
+show(int A[]=new int[]{10,20,30,40,50,60});
+
+It is based on method overloading.
+
+void show(int ...x)
+{
+ for(int a:x){
+  System.out.println(a);
+ }
+}
+
+Here ... indicates it is variable arguments.
