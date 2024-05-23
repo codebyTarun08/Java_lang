@@ -1,0 +1,28 @@
+  Java Varangs/ Variable Arguments
+  Variable Arguments (Varargs) in Java is a method that takes a variable number of arguments. Variable Arguments in Java simplifies the creation of methods that need 
+  to take a variable number of arguments.
+
+  example:
+show();
+show(10);
+show(10,20);
+show(10,20,30);
+show(10,20,30,40);
+show(10,20,30,40,50);
+show(10,20,30,40,50,60);
+show(new int[]{10,20,30,40,50,60});
+show(int A[]=new int[]{10,20,30,40,50,60});
+
+It is based on method overloading.
+
+void show(int ...x)
+{
+ for(int a:x){
+  System.out.println(a);
+ }
+}
+
+Here ... indicates it is variable arguments.
+
+VAriable arguments is must be the last Argument.
+Means show(int n,int ...A) is valid but show(int ...A,int n) is not valid. because Arguments are variable.
